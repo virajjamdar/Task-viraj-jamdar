@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['2019',  1000,      400],
+          ['2020',  1170,      460],
+          ['2021',  660,       1120],
+          ['2022',  1030,      540]
+        ]);
+
+        var options = {
+          title: 'Customer Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById("curve_chart"));
+
+        chart.draw(data, options);
+      }
+    </script>
+<div class="chart1">
+ <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load("current", {packages:["corechart"]});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Task', 'Hours per Day'],
+          ['Equity',     11],
+          ['F&Q',      2],
+          ['Commodity',  2],
+          ['Currency', 2],
+          
+        ]);
+
+        var options = {
+          title: 'Customer Activities',
+          is3D: true,
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart_3d'));
+        chart.draw(data, options);
+      }
+    </script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+  function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+      ['Mon', 20, 28, 38, 45],
+      ['Tue', 31, 38, 55, 66],
+      ['Wed', 50, 55, 77, 80],
+      ['Thu', 77, 77, 66, 50],
+      ['Fri', 68, 66, 22, 15]
+      // Treat first row as data as well.
+    ], true);
+
+    var options = {
+      legend:'none'
+    };
+
+    var chart = new google.visualization.CandlestickChart(document.getElementById('chart_div'));
+
+    chart.draw(data, options);
+  }
+    </script>
+<script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Sales', 'Expenses'],
+          ['jan',  900,      600],
+          ['Feb',  1470,      660],
+          ['Mar',  560,       1020],
+          ['Apri',  1030,      840]
+        ]);
+
+        var options = {
+          title: 'Converted Customer',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById("curve_chart1"));
+
+        chart.draw(data, options);
+      }
+    </script>
+<script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Month', 'Sales', 'Expenses'],
+          ['jan',  100,      200],
+          ['Feb',  800,      660],
+          ['Mar',  360,       1220],
+          ['Apri',  1230,      840]
+        ]);
+
+        var options = {
+          title: 'Leads added',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById("curve_chart2"));
+
+        chart.draw(data, options);
+      }
+    </script>
+
+</div>
+
+<style>
+.chart{
+	top:10%;
+	padding:10px;
+	margin-top:20px;
+	
+
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  overflow: hidden;
+  background-color: Indigo;
+  hight:45px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size:25px;
+}
+
+li a:hover {
+  background-color: #111;
+}
+#search{
+margin-left:200px;
+height:25px;
+margin-top:10px;
+
+}
+
+nav {
+  float: left;
+  width: 15%;
+  height: 800px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+#nav1{
+  float: right;
+  width: 15%;
+  height: 800px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+
+
+
+<!--@media (max-width: 600px) {
+  nav {
+    width: 100%;
+    height: auto;
+  }
+}-->
+h1{
+margin-left:20px;
+
+  <!--display: block;-->
+  color: Black;
+  text-align: center;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size:20px;
+
+}
+
+
+
+#photo{
+height:100px;
+width:100px;
+border-radius:50px;
+margin-left:80px;
+}
+#pic{
+height:200px;
+width:200px;
+margin-left:5px;
+}
+#td1{
+padding-left:20px;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a class="active" href="#BROKER">BROKER</a></li>
+   <input type="text" id="search" placeholder="Search By UCC,Name"> 
+  
+  
+</ul>
+
+<div class="container" id="div1">
+ <nav style="text-align: justify;">
+  
+  <h1><i class="fas fa-circle-notch"></i>&emsp;Overview</h1> 
+  <h1><i class="fas fa-user-friends"></i>&emsp;Leads</h1> 
+  <h1><i class="fas fa-user-circle"></i>&emsp;Customer</h1> 
+  <h1><i class="fas fa-chart-line"></i>&emsp;Earning</h1> 
+  <h1 id="A" style="margin-top:250px;"><i class="fas fa-bell"></i>&emsp;Notification</h1> 
+  <h1 id="B"><i class="fas fa-question-circle"></i>&emsp;HELP</h1> 
+ 
+  </nav>
+   
+  
+  <nav id="nav1">
+<img id="photo" src="v.png.png">
+<p><h1>Viraj jamdar<br />ID-302010</h1></p>
+<p>Recently activity</h1></p><br>
+<p>1.837 USD=0.084<br>1BTC=8.468USD</p><br>
+<p>1.837 USD=0.084<br>1BTC=8.468USD</p><br>
+<p>1.837 USD=0.084<br>1BTC=8.468USD</p><br>
+<img id="pic" src="invite.jpg">
+  
+ 
+  </nav> 
+ 
+</div>
+<div class="container" style="padding-top: 20px;">
+   <div class="row">
+   <div class="col-6" style="width: 400px; height:150px; border: 2px solid black; margin-left: 480px;">
+       <p style="margin-top:5px; margin-left:10px;"><b>Balance</b> <br>&emsp;&emsp;&emsp;<b>$25,200.97</b></p>
+       
+<tr>
+&emsp;<th id="td1">Invested</th>
+&emsp;&emsp;<th id="td1">%profit</th>
+&emsp;&emsp;<th id="td1">%USD profit</th>
+<br>
+
+</tr>
+       <tr>
+      &emsp; <td id="td1">$10.458</td>
+       &emsp;&emsp;<td id="td1">+60%</td>
+       &emsp;&emsp;<td id="td1">$15,638.38</td>
+       </tr>
+
+   </div>
+      <div class="col-6" id="curve_chart" style="width: 400px; height: 200px; float: right;"></div>
+<div id="piechart_3d" style="width: 400px; height: 200px; top:20%; margin-left:244px;"></div>
+<div id="chart_div" style="width: 850px; height: 200px; margin-left:244px;"></div>
+<div class="col-6" id="curve_chart1" style="width: 400px; height: 200px; float: left;"></div>
+<div class="col-6" id="curve_chart2" style="width: 400px; height: 200px; float: right;"></div>
+
+
+   </div>
+</div>
+</div>
+</body>
+
+
+</html>
